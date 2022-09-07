@@ -12,8 +12,21 @@ document.getElementById('cars').innerHTML = template
 export class CarController{
 constructor(){
 
+
+
+
+
+
 _drawCars()
 }
+
+
+
+buyItem(id){
+  carService.buyItem(id)
+  console.log("hi from controller");
+}
+
 
 
 }

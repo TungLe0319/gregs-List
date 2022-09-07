@@ -3,9 +3,9 @@ import { Car } from "../Models/CarModel.js";
 
 class CarService{
 
-buyItem(name){
-  let car = appState.cars.find(p => p.name == name)
-  console.log(car);
+buyItem(id){
+  let car = appState.cars.find(p => p.id== id)
+  console.log(car.id);
 }
 
 

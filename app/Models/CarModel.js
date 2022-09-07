@@ -1,6 +1,8 @@
+import { generateId } from "../Utils/generateId.js"
+
 export class Car{
   constructor(make,model,year,price,description,imgUrl){
-    // this.id = generateId()
+    this.id = generateId()
     this.make = make
     this.model = model
     this.year = year

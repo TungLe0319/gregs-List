@@ -18,7 +18,7 @@ export class House{
     <div>Year:<p class="text-light ms-3">${this.description}</p></div>
     
    
-   <button class="btn btn-danger" onclick="">buy</button>
+   <button class="btn btn-danger" onclick="app.CarController.buyItem()">buy</button>
     </div>
   
     </div>`
