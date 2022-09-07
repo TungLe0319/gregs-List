@@ -1,4 +1,4 @@
-import { CarsController } from './Controllers/CarsController..js';
+import { CarsController } from './Controllers/CarsController.js';
 
 import { HouseController } from './Controllers/HouseController.js';
 import { JobController } from './Controllers/JobController.js';
