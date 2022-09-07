@@ -1,5 +1,5 @@
 import { appState } from '../AppState.js';
-import { Job } from '../Models/JobModel.js';
+import { Job } from '../Models/Job.js';
 
 function _drawJobs() {
   let jobs = appState.jobs;

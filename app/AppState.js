@@ -1,6 +1,6 @@
-import { Car } from './Models/CarModel.js';
-import { House } from './Models/HouseModel.js';
-import { Job } from './Models/JobModel.js';
+import { Car } from './Models/Car.js';
+import { House } from './Models/House.js';
+import { Job } from './Models/Job.js';
 import { Value } from './Models/Value.js';
 import { EventEmitter } from './Utils/EventEmitter.js';
 import { isValidProp } from './Utils/isValidProp.js';
@@ -10,7 +10,7 @@ class AppState extends EventEmitter {
   /** @type {import('./Models/Value').Value[]} */
   values = loadState('values', Value);
 
-  /** @type {import('./Models/CarModel').Car[]} */
+  /** @type {import('./Models/Car').Car[]} */
   cars = [
     new Car(
       'Ford',
@@ -46,7 +46,7 @@ class AppState extends EventEmitter {
     ),
   ];
 
-  /** @type {import('./Models/HouseModel').House[]} */
+  /** @type {import('./Models/House').House[]} */
   Houses = [
     new House(
       'Idaho',
@@ -70,7 +70,7 @@ class AppState extends EventEmitter {
 
   // -------------------------------------------
 
-  /** @type {import('./Models/JobModel').Job[]} */
+  /** @type {import('./Models/Job').Job[]} */
 
   jobs = [
     new Job(

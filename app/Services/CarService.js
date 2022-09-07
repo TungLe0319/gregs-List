@@ -1,5 +1,5 @@
 import { appState } from "../AppState.js";
-import { Car } from "../Models/CarModel.js";
+import { Car } from "../Models/Car.js";
 
 export class CarService{
 

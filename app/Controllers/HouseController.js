@@ -1,5 +1,5 @@
 import { appState } from "../AppState.js";
-import { House } from "../Models/HouseModel.js";
+import { House } from "../Models/House.js";
 
 function _drawHouses(){
   let houses = appState.Houses

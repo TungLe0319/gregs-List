@@ -50,41 +50,85 @@
           />
           <span class="ms-2">Tungithy's List</span>
         </a>
-        <button type="button" class="btn btn-danger">Cars</button>
-        <button type="button" class="btn btn-danger mx-3">Houses</button>
-        <button type="button" class="btn btn-danger">Jobs</button>
+
+        <div class="d-flex justify-content-between">
+          <div class="nav-links d-flex gap-3 ms-3">
+            <div>
+              <h6 class="selectable mb-0 p-2 rounded">Cars</h6>
+            </div>
+            <div>
+              <h6 class="selectable mb-0 p-2 rounded">Houses</h6>
+            </div>
+            <div>
+              <h6 class="selectable mb-0 p-2 rounded">Jobs</h6>
+            </div>
+          </div>
+
+          <div>
+            <button
+              class="btn btn-outline-light"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#banana"
+            >
+              🪫AddCar
+            </button>
+          </div>
+        </div>
       </nav>
     </header>
     <main class="debug">
-      <div class="container-fluid">
+      <section id="listings" class="container" role="Listings">
+        <div class="row my-5">
+          <div class="col-md-4 col-lg-3 ">
+            <div class="card">
+              <img src="https://img.hmn.com/900x0/stories/2018/06/coupe.jpg" alt="" class="img-fluid rounded">
+              <div class="card-body">
+                <h5 class="text-uppercase">Honda|Accord 1985</h5>
+                <p><strong>$1000</strong></p>
+                <p>Zoom Zoom</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container-fluid visually-hidden">
         <div class="row">
           <!-- CARS-------------------- -->
           <div id="houses" class="col-md-12 bg-dark text-light left"></div>
           <!-- ------END CARS------------- -->
           <!-- HOUSES-------------- -->
           <div id="cars" class="col-md-12 bg-primary text-light middle">
-            <!--         
-
-
-
-           -->
+            <!--          -->
           </div>
-          <!-- ---------END HOUSES------------------------- -->
 
-          <!-- -------------JOB--------------------------- -->
-
-          <div id="jobs" class="col-md-12 bg-dark text-light left"></div>
+          <div id="jobs" class="col-md-12 bg-dark text-light d-flex"></div>
           <!-- --------------------END JOB------------ -->
         </div>
       </div>
       <!-- ------- MODAL SPOT------------------------- -->
     </main>
-    <footer class="bg-dark text-light">
-      <div class="text-center no-select">
-        <p><small>Made with 💖 by CodeWorks</small></p>
+    <!-- OFF CONVAS -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="banana"
+      aria-labelledby="bananaLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="bananaLabel">Offcanvas</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
       </div>
-    </footer>
-
+      <div class="offcanvas-body">
+        <form action=""><input type="text" /></form>
+      </div>
+    </div>
+    <!-- ------------ -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
