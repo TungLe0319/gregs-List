@@ -106,9 +106,21 @@ class AppState extends EventEmitter {
     ),
     new House(
       'Montreux, Switzerland',
-      90000,
+      280000,
       'Charming Mansion for the wealthy and lucky to be able to be in Switzerland',
       'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhomesoftherich.net%2Fwp-content%2Fuploads%2F2017%2F01%2FScreen-Shot-2017-01-09-at-2.43.40-PM.png&f=1&nofb=1'
+    ),
+    new House(
+      'Anywhere, United States',
+      75000,
+      'a beautiful mobile home in wheels you can have placed where ever you want.',
+      'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.doityourselfrv.com%2Fwp-content%2Fuploads%2F2015%2F02%2F30-foot-long-tiny-house.jpg&f=1&nofb=1'
+    ),
+    new House(
+      'McAllen, Texas',
+      90000,
+      'a comfortable home in texas that has a large backyard, no wild cats totally roaming outside of your house.',
+      'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdolcanhomes.com%2Fwp-content%2Fuploads%2F2020%2F11%2FDolcan-Homes_1008-E-Jersey-Meadow_Mcallen_Web_005.jpg&f=1&nofb=1'
     ),
   ];
 
