@@ -1,7 +1,7 @@
 import { appState } from "../AppState.js";
 import { Car } from "../Models/CarModel.js";
 
-class CarService{
+export class CarService{
 
 buyItem(id){
   let car = appState.cars.find(p => p.id== id)

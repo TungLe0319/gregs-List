@@ -1,6 +1,6 @@
 import { Car } from './Models/CarModel.js';
 import { House } from './Models/HouseModel.js';
-import { Job } from "./Models/JobModel";
+import { Job } from './Models/JobModel.js';
 import { Value } from './Models/Value.js';
 import { EventEmitter } from './Utils/EventEmitter.js';
 import { isValidProp } from './Utils/isValidProp.js';
@@ -68,11 +68,24 @@ class AppState extends EventEmitter {
     ),
   ];
 
-// -------------------------------------------
+  // -------------------------------------------
 
-   /** @type {import('./Models/JobModel').Job[]} */
+  /** @type {import('./Models/JobModel').Job[]} */
 
-   jobs = [new Job('SoftWareDeveloper',50000,"exactly what you're here for."), new Job('Pet Sitter', 200,"Watching my pets for the weekend.")]
+  jobs = [
+    new Job(
+      'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbeapythondev.files.wordpress.com%2F2020%2F01%2Fcanva-software-developer-working.jpg%3Fw%3D800&f=1&nofb=1',
+      'SoftWareDeveloper',
+      50000,
+      "exactly what you're here for."
+    ),
+    new Job(
+      'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fuk.jobrapido.com%2Fblog%2Fwp-content%2Fuploads%2Fsites%2F3%2F2020%2F04%2Fpet-sitter.jpg&f=1&nofb=1',
+      'Pet Sitter',
+      200,
+      'Watching my pets for the weekend.'
+    ),
+  ];
 }
 
 export const appState = new Proxy(new AppState(), {
