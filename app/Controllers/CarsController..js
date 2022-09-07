@@ -1,5 +1,6 @@
 import { appState } from '../AppState.js';
-import { carService } from '../Services/CarService.js';
+import { carService } from '../Services/CarsService.js';
+import { getFormData } from "../Utils/FormHandler.js";
 import { setHTML } from '../Utils/Writer.js';
 
 function _drawCars() {
@@ -22,10 +23,24 @@ export class CarsController {
     appState.on('cars', _drawCars);
   }
 
-  buyItem(id) {
-    carService.buyItem(id);
-    console.log('hi from controller');
-  }
+// NOTE first thing with dealing with user is try Catch
+addCar(){
+try {
+  //REVIEW  SOMETHING WE DO WITH EVERY FORM!!!!!
+ //@ts-ignore
+  window.event.preventDefault()
+  const form = window.event.target
+let formData= getFormData(form)
+
+// can't do job without formData
+carService.addCar(formData)
+
+
+} catch (error) {
+ console.error('addCar', error)
+}
+}
+
 }
 
 // NOTE never manipulate data directly from a controller its a big NO-NO
