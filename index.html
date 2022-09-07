@@ -12,25 +12,87 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="assets/style/main.css">
   <link rel="stylesheet" href="assets/style/style.css">
-  <title>gregs-List</title>
+  <title>gregs-List-Tungithy</title>
 </head>
+<style>
+  body.debug .container,
+  body.debug .container-fluid {
+    outline: 2px double blue;
+    outline-offset: -2px;
+  }
 
+  body.debug .row {
+    outline: 2px dashed red;
+    outline-offset: -2px;
+  }
+
+  body.debug [class*="col-"] {
+    outline: 2px dotted forestgreen;
+    outline-offset: -3px;
+  }
+</style>
 <body>
   <header>
     <nav class="navbar navbar-dark navbar-expand bg-dark text-light no-select">
       <a class="navbar-brand ms-3" href="#">
         <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
           loading="lazy">
-        <span class="ms-2">gregs-List</span>
+        <span class="ms-2">Tungithy's List</span>
       </a>
     </nav>
   </header>
-  <main>
+  <main class="debug">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12">
-          <div id="app"></div>
+        <!-- CARS-------------------- -->
+        <div id="cars" class="col-3 bg-dark text-light left">
+        
+          <div><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmediacloud.carbuyer.co.uk%2Fimage%2Fprivate%2Fs--VwwIFb0X--%2Fv1579653672%2Fcarbuyer%2F2019%2F08%2Fdsc_9224.jpg&f=1&nofb=1" alt="" class="rounded elevation-3" style="width: 15rem;"></div>
+          <div class="stats bg-primary elevation-2 rounded">
+  <div class=""><p>Name/make</p></div>
+          <div><p>Modal</p></div>
+          <div><p>year</p></div>
+          <div><p>price</p></div>
+          <div><p>description</p></div>
+          </div>
+        
+          
         </div>
+        <!-- ------END CARS------------- -->
+        <!-- HOUSES-------------- -->
+        <div id="cars" class="col-3 bg-primary text-light middle">
+        
+          <div class="d-flex justify-content-center py-1"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmediacloud.carbuyer.co.uk%2Fimage%2Fprivate%2Fs--VwwIFb0X--%2Fv1579653672%2Fcarbuyer%2F2019%2F08%2Fdsc_9224.jpg&f=1&nofb=1" alt="" class="rounded elevation-3" style="width: 15rem;"></div>
+          <div class="stats bg-dark elevation-2 rounded flex-column p-2">
+  <div class=""><p>Name/make</p></div>
+          <div><p>Modal</p></div>
+          <div><p>year</p></div>
+          <div><p>price</p></div>
+          <div><p>description</p></div>
+          </div>
+        
+          
+        </div>
+<!-- ---------END HOUSES------------------------- -->
+
+<!-- -------------JOB--------------------------- -->
+
+
+<div id="cars" class="col-3 bg-dark text-light left">
+        
+  <div><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmediacloud.carbuyer.co.uk%2Fimage%2Fprivate%2Fs--VwwIFb0X--%2Fv1579653672%2Fcarbuyer%2F2019%2F08%2Fdsc_9224.jpg&f=1&nofb=1" alt="" class="rounded elevation-3" style="width: 15rem;"></div>
+  <div class="stats bg-primary elevation-2 rounded">
+<div class=""><p>Name/make</p></div>
+  <div><p>Modal</p></div>
+  <div><p>year</p></div>
+  <div><p>price</p></div>
+  <div><p>description</p></div>
+  </div>
+
+  
+</div>
+<!-- --------------------END JOB------------ -->
+
       </div>
     </div>
   </main>
