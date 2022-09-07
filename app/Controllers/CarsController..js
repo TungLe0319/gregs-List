@@ -34,7 +34,7 @@ let formData= getFormData(form)
 
 // can't do job without formData
 carService.addCar(formData)
-
+form.reset()
 
 } catch (error) {
  console.error('addCar', error)
