@@ -44,6 +44,38 @@ class AppState extends EventEmitter {
       'It has got 4 wheels.',
       'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fzombdrive.com%2Fimages1600_%2F2014-tesla-model-s-2686.jpg&f=1&nofb=1'
     ),
+    new Car(
+      'BackToTheFuture',
+      'Model 1',
+      2020,
+      800000,
+      ' I have seen your future.',
+      'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs3.amazonaws.com%2Fcarbayblog%2Fwp-content%2Fuploads%2F2016%2F01%2F29110257%2F1441680331_blist5708.jpg&f=1&nofb=1'
+    ),
+    new Car(
+      'Cadallac',
+      'DeVille',
+      1970,
+      180000,
+      ' You got some street cred going for ya.',
+      'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.kloompy.com%2Foc-content%2Fuploads%2F77%2F87670.jpg&f=1&nofb=1'
+    ),
+    new Car(
+      'The',
+      'Bat',
+      2010,
+      1805000,
+      ' I Am The Bat Man Mobile.',
+      'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.corvetteforum.com%2Fwp-content%2Fuploads%2F2020%2F12%2F0-1581008632087%402x-1-e1606944996924.jpg&f=1&nofb=1'
+    ),
+    new Car(
+      'Mercedes',
+      'Benz',
+      2010,
+      1805000,
+      ' Great for camping and living by yourself.',
+      'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.carbuzz.com%2Fgallery-images%2F2020-mercedes-benz-sprinter-crew-van-front-angle-view-carbuzz-708744-1600.jpg&f=1&nofb=1'
+    ),
   ];
 
   /** @type {import('./Models/House').House[]} */

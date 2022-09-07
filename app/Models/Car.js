@@ -42,9 +42,9 @@ get CarTemplate(){
    <div class="card">
   <img src="${this.imgUrl}" alt="${this.make}-${this.model}" class="img-fluid rounded">
   <div class="card-body">
-    <h5 class="text-uppercase">${this.make}|${this.model}${this.year}</h5>
+    <h6 class="text-uppercase">${this.make}|${this.model}${this.year}</h6>
     <p><strong>$${this.price}</strong></p>
-    <p>${this.description}</p>
+    <small>${this.description}</small>
   </div>
 </div>
 </div>`
