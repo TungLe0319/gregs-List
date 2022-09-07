@@ -1,5 +1,6 @@
 import { Car } from './Models/CarModel.js';
 import { House } from './Models/HouseModel.js';
+import { Job } from "./Models/JobModel";
 import { Value } from './Models/Value.js';
 import { EventEmitter } from './Utils/EventEmitter.js';
 import { isValidProp } from './Utils/isValidProp.js';
@@ -66,6 +67,12 @@ class AppState extends EventEmitter {
       'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F1d%2Ff5%2F79%2F1df579f5f0bd8482541d70a2f71750e5.jpg&f=1&nofb=1'
     ),
   ];
+
+// -------------------------------------------
+
+   /** @type {import('./Models/JobModel').Job[]} */
+
+   jobs = [new Job('SoftWareDeveloper',50000,"exactly what you're here for."), new Job('Pet Sitter', 200,"Watching my pets for the weekend.")]
 }
 
 export const appState = new Proxy(new AppState(), {
