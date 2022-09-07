@@ -95,8 +95,20 @@ class AppState extends EventEmitter {
     new House(
       'Oceanside, Oregon',
       450000,
-      'Cabin in the Words',
+      'Knotty Cabin right next to the OceanSide Oregon Beach, Absolutley stunning view and small walk to the beachfront.',
       'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F1d%2Ff5%2F79%2F1df579f5f0bd8482541d70a2f71750e5.jpg&f=1&nofb=1'
+    ),
+    new House(
+      'FallRiver, MA',
+      90000,
+      'Lizzie Borden House',
+      'https://media.timeout.com/images/105635087/1372/1029/image.jpg'
+    ),
+    new House(
+      'Montreux, Switzerland',
+      90000,
+      'Charming Mansion for the wealthy and lucky to be able to be in Switzerland',
+      'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhomesoftherich.net%2Fwp-content%2Fuploads%2F2017%2F01%2FScreen-Shot-2017-01-09-at-2.43.40-PM.png&f=1&nofb=1'
     ),
   ];
 

@@ -39,7 +39,7 @@ export class Car{
 get CarTemplate(){
   return /*html*/ `
   <div class="col-md-4 col-lg-3">
-   <div class="card">
+   <div class="card mb-3">
   <img src="${this.imgUrl}" alt="${this.make}-${this.model}" class="img-fluid rounded">
   <div class="card-body">
     <h6 class="text-uppercase">${this.make}|${this.model}${this.year}</h6>
